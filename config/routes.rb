@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  namespace :layouts do
+  get 'header/layouts/footer'
+  end
+
+  namespace :layouts do
+  get 'header/layouts/sidebar'
+  end
+
   get 'users/index'
   get 'users/show/:username'  => 'users#show'
 
